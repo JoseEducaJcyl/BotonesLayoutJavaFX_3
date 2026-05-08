@@ -1,17 +1,36 @@
 package org.example;
 
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
+public class Main extends Application {
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        Button boton1 = new Button("Boton 1");
+        Button boton2 = new Button("Boton 2");
+        Button boton3 = new Button("Boton 3");
+        Button boton4 = new Button("Boton 4");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
-        }
+        GridPane gridPane = new GridPane();
+        gridPane.setHgap(10);
+        gridPane.setVgap(10);
+        gridPane.add(boton1, 0,0);
+        gridPane.add(boton2, 0,1);
+        gridPane.add(boton3, 1,0);
+        gridPane.add(boton4, 1,1);
+
+        Scene scene = new Scene(gridPane, 300, 300);
+        primaryStage.setTitle("Cuadricula Botones");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
 }
