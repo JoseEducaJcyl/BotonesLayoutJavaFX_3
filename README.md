@@ -1,34 +1,27 @@
 # BotonesLayoutJavaFX_3
 
-Ejemplos prácticos de **diálogos emergentes y validación de datos** en JavaFX.
+Proyecto desarrollado en Java utilizando JavaFX y Maven para practicar la creación de interfaces gráficas y la organización de componentes mediante layouts.
 
-## ¿Qué incluye?
+## Descripción
 
-- **Alertas**: Muestra ventanas de información, advertencia y error.
-- **Entrada de texto**: Diálogo (`TextInputDialog`) para que el usuario escriba su nombre.
-- **Selección de opciones**: Diálogo (`ChoiceDialog`) para elegir entre varias opciones predefinidas.
-- **Validación de campos**: Comprueba que los campos no estén vacíos en un formulario.
-- **Validación de formato**: Verifica que un teléfono tenga exactamente 9 dígitos usando una expresión regular (`\\d{9}`).
+La aplicación muestra una interfaz gráfica con distintos botones y elementos organizados utilizando contenedores y layouts de JavaFX.
 
-## ¿Cómo funciona?
+Este proyecto está orientado al aprendizaje del diseño de interfaces gráficas, distribución de componentes y gestión básica de eventos en aplicaciones JavaFX.
 
-1. Cada ejemplo es independiente (se puede ejecutar por separado).
-2. Los botones disparan diferentes tipos de diálogos.
-3. Los formularios validan los datos antes de mostrarlos o procesarlos.
-4. Si hay errores (campos vacíos o formato incorrecto), se muestra una alerta de advertencia o error.
+## Tecnologías utilizadas
 
-## ¿Para qué sirve?
+- Java
+- JavaFX
+- Maven
 
-Aprender a interactuar con el usuario mediante:
-- Mensajes emergentes (`Alert`).
-- Captura de texto (`TextInputDialog`).
-- Selección de opciones (`ChoiceDialog`).
-- Validación básica de datos en interfaces gráficas.
+## Requisitos
 
-## Requisitos y ejecución
+- JDK 17 o superior
+- Maven
+- IDE compatible con JavaFX (IntelliJ IDEA, Eclipse o NetBeans)
 
-- Java 11 o superior.
-- Maven.
+## Instalación y ejecución
 
+Clonar el repositorio:
 ```bash
 mvn javafx:run
